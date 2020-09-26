@@ -8,20 +8,20 @@ pipeline {
         stage ('Build') {
             steps {
                 echo 'Build Phase'
-                mvn clean compile
+                sh 'mvn clean compile'
             }
          
         }
         stage ('Test') { 
             steps {
                 echo 'Test Phase'
-                mvn test
+                sh 'mvn test'
             }
         }
         stage ('Deploy') { 
             steps {
                 echo 'Deploy Phase'
-                mvn install
+                sh 'mvn install'
             }
         }
     }           
