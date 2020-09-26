@@ -3,18 +3,21 @@ agent any
     stages { 
         stage ('Build') {
             steps {
-                sh 'mvn clean compile'
+                echo 'Build Phase'
+                //sh 'mvn clean compile'
             }
          
         }
         stage ('Test') { 
             steps {
-                sh 'mvn test'
+                echo 'Test Phase'
+                //sh 'mvn test'
             }
         }
         stage ('Deploy') { 
             steps {
-                sh 'mvn install'
+                echo 'Deploy Phase'
+                //sh 'mvn install'
             }
         }
     }           
