@@ -7,15 +7,8 @@ agent any
         stage ('Test') { 
         echo 'Test Phase'
         }
-        stage ('QA') { 
-        echo 'QA Phase'
-        }
         stage ('Deploy') { 
         echo 'Deploy Phase'
         }
-        stage ('Monitor') { 
-        echo 'Monitor Phase'
-        }
- 
     }           
  }
